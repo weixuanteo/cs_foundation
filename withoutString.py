@@ -11,7 +11,9 @@ def withoutString(base, remove):
     rlen = len(remove)
     while string.find(base, remove) != -1:
         idx = string.find(base, remove)
+        print idx
         base = base[0:idx] + base[idx+rlen:]
+        print base
     return base
 
 print(withoutString("Hello there", "llo"))
